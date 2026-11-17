@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秘密基地入口-城市小众空间发现指南</title>
+<meta name="description" content="秘密基地入口收录城市里不挂牌的独立书店、天台录音棚、地下影院与手工工作室，整理预约方式、开放时间、费用与实地攻略，帮你在周末找到真正安静、便宜、能久坐的小众去处。">
+<meta name="keywords" content="秘密基地入口">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c2b4a'/%3E%3Cpath d='M9 21V13a7 7 0 0 1 14 0v8' fill='none' stroke='%23f2b34c' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='20' r='2.4' fill='%23f2b34c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#16202f;
+  --ink-2:#38455c;
+  --ink-3:#6b7891;
+  --paper:#f7f5f0;
+  --card:#ffffff;
+  --line:#e2ded5;
+  --brand:#1c2b4a;
+  --brand-2:#2f4470;
+  --accent:#e08b2d;
+  --accent-soft:#fdf0dc;
+  --mint:#2e6f63;
+  --mint-soft:#e6f1ee;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-1:0 1px 2px rgba(22,32,47,.06),0 4px 14px rgba(22,32,47,.05);
+  --shadow-2:0 6px 24px rgba(22,32,47,.12);
+  --sp-1:8px;--sp-2:14px;--sp-3:22px;--sp-4:34px;--sp-5:52px;--sp-6:76px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --fs-xs:12px;--fs-s:13px;--fs-m:15px;--fs-l:17px;--fs-xl:22px;--fs-2xl:30px;--fs-3xl:44px;
+  --fringe:212px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  font-size:var(--fs-m);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 var(--sp-2);}
+a{color:var(--brand-2);text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.2em;}
+li{margin-bottom:6px;}
+img{display:block;max-width:100%;}
+button{font-family:inherit;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;}
+
+/* ===== 吸顶组 ===== */
+.stick-top{position:sticky;top:0;z-index:60;}
+.announce{
+  background:var(--brand);
+  color:#f4efe3;
+  font-size:var(--fs-s);
+  padding:8px var(--sp-3);
+  display:flex;gap:10px;align-items:center;justify-content:center;
+  flex-wrap:wrap;text-align:center;
+}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none;margin-top:1px;}
+.announce b{color:#ffd394;font-weight:600;}
+.announce a{color:#ffd394;text-decoration:underline;text-underline-offset:2px;}
+
+.site-header{
+  background:rgba(247,245,240,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  padding:10px var(--sp-3);
+}
+.hd-inner{
+  max-width:1180px;margin:0 auto;
+  display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand-mark{width:38px;height:38px;flex:none;}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;}
+.brand-text b{font-size:var(--fs-l);letter-spacing:.5px;color:var(--brand);}
+.brand-text span{font-size:11px;color:var(--ink-3);letter-spacing:1.5px;}
+.nav-main{display:flex;gap:2px;flex-wrap:wrap;flex:1;justify-content:center;}
+.nav-main a{
+  font-size:var(--fs-s);color:var(--ink-2);padding:6px 10px;border-radius:var(--radius-s);
+  white-space:nowrap;
+}
+.nav-main a:hover{background:var(--accent-soft);color:var(--brand);text-decoration:none;}
+.hd-tools{display:flex;align-items:center;gap:8px;flex:none;}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:2px 4px 2px 12px;}
+.search-box input{border:0;background:transparent;font-size:var(--fs-s);width:120px;padding:6px 4px;color:var(--ink);outline:none;}
+.search-box button{
+  border:0;border-radius:999px;background:var(--brand);color:#fff;
+  font-size:var(--fs-xs);padding:6px 12px;cursor:pointer;white-space:nowrap;
+}
+.search-box button:hover{background:var(--brand-2);}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);
+  padding:7px 12px;font-size:var(--fs-s);color:var(--brand);cursor:pointer;
+}
+.search-feedback{max-width:1180px;margin:6px auto 0;font-size:var(--fs-xs);color:var(--accent);display:none;}
+.search-feedback.on{display:block;}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(150deg,#1c2b4a 0%,#243757 52%,#2e4a5f 100%);
+  color:#f4f1e8;
+  padding:var(--sp-6) var(--sp-3) var(--sp-5);
+}
+.hero-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);align-items:center;}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(255,211,148,.45);color:#ffd394;
+  font-size:var(--fs-xs);letter-spacing:2px;padding:4px 12px;border-radius:999px;margin-bottom:var(--sp-3);
+}
+.hero h1{font-size:var(--fs-3xl);letter-spacing:2px;margin-bottom:var(--sp-3);}
+.hero-lead{font-size:var(--fs-l);color:#d6dbe6;max-width:520px;margin-bottom:var(--sp-4);}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-4);}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:999px;font-size:var(--fs-m);
+  cursor:pointer;border:1px solid transparent;transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn-primary{background:var(--accent);color:#26180a;font-weight:600;}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#f4f1e8;}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-2);text-decoration:none;}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:var(--sp-3);}
+.hero-stats div{line-height:1.3;}
+.hero-stats b{display:block;font-size:var(--fs-xl);color:#ffd394;}
+.hero-stats span{font-size:var(--fs-xs);color:#b9c3d4;}
+.hero-art{position:relative;min-height:300px;}
+.hero-art svg{width:100%;height:auto;}
+.hero-note{
+  position:absolute;right:0;bottom:-6px;background:rgba(247,245,240,.94);color:var(--ink);
+  border-radius:var(--radius-m);padding:10px 14px;font-size:var(--fs-xs);max-width:220px;
+  box-shadow:var(--shadow-2);line-height:1.6;
+}
+.hero-note b{color:var(--brand);display:block;font-size:var(--fs-s);}
+
+/* ===== 布局 ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp-3);}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-4);padding:var(--sp-5) 0;}
+main{min-width:0;}
+section{scroll-margin-top:var(--fringe);margin-bottom:var(--sp-6);}
+.sec-head{margin-bottom:var(--sp-3);}
+.sec-kicker{font-size:var(--fs-xs);letter-spacing:2px;color:var(--accent);font-weight:600;display:block;margin-bottom:4px;}
+.sec-head h2{font-size:var(--fs-2xl);color:var(--brand);}
+.sec-sub{color:var(--ink-3);font-size:var(--fs-s);margin-top:6px;}
+
+/* ===== 领域概览 ===== */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2);}
+.ov-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-3);box-shadow:var(--shadow-1);
+}
+.ov-card h3{font-size:var(--fs-l);color:var(--brand);margin-bottom:8px;}
+.ov-card p{font-size:var(--fs-s);color:var(--ink-2);margin:0;}
+.ov-card .num{font-size:var(--fs-xs);color:var(--accent);letter-spacing:1px;font-weight:600;}
+
+/* ===== 精选推荐（非对称组合） ===== */
+.feature-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:var(--sp-2);}
+.feat-main{
+  grid-row:span 2;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);
+  overflow:hidden;box-shadow:var(--shadow-1);display:flex;flex-direction:column;
+}
+.feat-main img{width:100%;height:230px;object-fit:cover;}
+.feat-body{padding:var(--sp-3);}
+.feat-body .tag{display:inline-block;font-size:var(--fs-xs);background:var(--accent-soft);color:#8a4c07;padding:2px 10px;border-radius:999px;margin-bottom:10px;}
+.feat-body h3{font-size:var(--fs-xl);color:var(--brand);margin-bottom:8px;}
+.feat-body p{font-size:var(--fs-s);color:var(--ink-2);}
+.dl{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 12px;font-size:var(--fs-xs);color:var(--ink-3);border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;}
+.dl b{color:var(--ink);font-weight:600;}
+.feat-side{display:flex;flex-direction:column;gap:var(--sp-2);}
+.feat-mini{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-2) var(--sp-3);box-shadow:var(--shadow-1);display:flex;gap:12px;align-items:flex-start;
+}
+.feat-mini img{width:64px;height:64px;object-fit:cover;border-radius:var(--radius-s);flex:none;}
+.feat-mini h4{font-size:var(--fs-m);color:var(--brand);margin-bottom:2px;}
+.feat-mini p{font-size:var(--fs-xs);color:var(--ink-3);margin:0;}
+
+/* ===== 最新更新（时间线紧凑列表） ===== */
+.updates{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);padding:var(--sp-3);box-shadow:var(--shadow-1);}
+.up-list{list-style:none;padding:0;margin:0;}
+.up-list li{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);align-items:flex-start;}
+.up-list li:last-child{border-bottom:0;padding-bottom:0;}
+.up-date{flex:none;width:74px;font-size:var(--fs-xs);color:var(--accent);font-weight:600;padding-top:2px;}
+.up-list h4{font-size:var(--fs-m);color:var(--brand);margin-bottom:2px;}
+.up-list p{font-size:var(--fs-s);color:var(--ink-2);margin:0;}
+
+/* ===== 分类入口（标签索引） ===== */
+.cat-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);}
+.cat-group h3{font-size:var(--fs-m);color:var(--brand-2);border-left:3px solid var(--accent);padding-left:10px;margin-bottom:10px;letter-spacing:.5px;}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px;}
+.tag-cloud a{
+  font-size:var(--fs-s);background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:5px 14px;color:var(--ink-2);
+}
+.tag-cloud a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none;background:var(--accent-soft);}
+
+/* ===== 深度解析 ===== */
+.deep{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:var(--sp-4);box-shadow:var(--shadow-1);
+}
+.deep h2{font-size:var(--fs-2xl);color:var(--brand);margin-bottom:6px;}
+.deep-meta{font-size:var(--fs-xs);color:var(--ink-3);margin-bottom:var(--sp-3);}
+.deep h3{font-size:var(--fs-l);color:var(--brand-2);margin:var(--sp-4) 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent-soft);}
+.deep p{color:var(--ink-2);}
+.deep .note{background:var(--mint-soft);border-left:3px solid var(--mint);padding:10px 14px;border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:var(--fs-s);color:#1f4f47;margin:var(--sp-2) 0;}
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:var(--sp-2) 0;}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.check-table th{background:#faf8f4;color:var(--brand);width:32%;}
+.check-table td{color:var(--ink-2);}
+
+/* ===== 体验指南（编号步骤） ===== */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-2);}
+.steps li{
+  position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-2) var(--sp-3) var(--sp-2) 60px;box-shadow:var(--shadow-1);
+}
+.steps li::before{
+  counter-increment:step;content:counter(step);
+  position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;
+  background:var(--brand);color:#ffd394;font-weight:700;font-size:var(--fs-s);
+  display:flex;align-items:center;justify-content:center;
+}
+.steps h4{font-size:var(--fs-m);color:var(--brand);margin-bottom:4px;}
+.steps p{font-size:var(--fs-s);color:var(--ink-2);margin:0;}
+
+/* ===== FAQ ===== */
+.faq details{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  margin-bottom:10px;box-shadow:var(--shadow-1);overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:14px var(--sp-3);font-weight:600;color:var(--brand);font-size:var(--fs-m);
+  list-style:none;position:relative;padding-right:40px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--accent);line-height:1;
+}
+.faq details[open] summary::after{content:"–";}
+.faq details[open] summary{background:var(--accent-soft);}
+.faq-body{padding:4px var(--sp-3) var(--sp-3);font-size:var(--fs-s);color:var(--ink-2);}
+.faq-body p{margin-bottom:8px;}
+
+/* ===== 评论 ===== */
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-2);}
+.review{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-3);box-shadow:var(--shadow-1);display:flex;flex-direction:column;gap:8px;
+}
+.review blockquote{margin:0;font-size:var(--fs-s);color:var(--ink-2);line-height:1.7;}
+.review .who{font-size:var(--fs-xs);color:var(--ink-3);display:flex;justify-content:space-between;gap:8px;}
+.review .who b{color:var(--brand-2);}
+.stars{color:var(--accent);letter-spacing:1px;font-size:var(--fs-xs);}
+
+/* ===== 资讯 ===== */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-2);}
+.news-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-3);box-shadow:var(--shadow-1);
+}
+.news-card time{font-size:var(--fs-xs);color:var(--accent);font-weight:600;}
+.news-card h3{font-size:var(--fs-m);color:var(--brand);margin:6px 0;}
+.news-card p{font-size:var(--fs-s);color:var(--ink-2);margin:0;}
+
+/* ===== 榜单 ===== */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank;}
+.rank-list li{
+  counter-increment:rank;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius-m);padding:12px var(--sp-3) 12px 58px;position:relative;
+  margin-bottom:8px;box-shadow:var(--shadow-1);
+}
+.rank-list li::before{
+  content:counter(rank);position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  font-size:var(--fs-xl);font-weight:800;color:var(--accent);font-family:Georgia,serif;
+}
+.rank-list h4{font-size:var(--fs-m);color:var(--brand);margin-bottom:2px;}
+.rank-list p{font-size:var(--fs-xs);color:var(--ink-3);margin:0;}
+
+/* ===== 推荐标签 ===== */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.rec-tags a{
+  background:var(--brand);color:#f2e6cf;font-size:var(--fs-s);padding:8px 18px;border-radius:var(--radius-s);
+}
+.rec-tags a:nth-child(even){background:var(--brand-2);}
+.rec-tags a:hover{background:var(--accent);color:#26180a;text-decoration:none;}
+
+/* ===== 侧栏 ===== */
+aside{min-width:0;}
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--sp-3);box-shadow:var(--shadow-1);margin-bottom:var(--sp-3);
+}
+.side-card h3{font-size:var(--fs-m);color:var(--brand);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.side-nav{list-style:none;padding:0;margin:0;}
+.side-nav a{
+  display:block;font-size:var(--fs-s);color:var(--ink-2);padding:6px 10px;border-radius:var(--radius-s);border-left:3px solid transparent;
+}
+.side-nav a.active{background:var(--accent-soft);border-left-color:var(--accent);color:var(--brand);font-weight:600;}
+.side-nav a:hover{text-decoration:none;background:#f3efe6;}
+.side-list{list-style:none;padding:0;margin:0;font-size:var(--fs-s);}
+.side-list li{padding:7px 0;border-bottom:1px dashed var(--line);color:var(--ink-2);}
+.side-list li:last-child{border-bottom:0;}
+.side-list b{color:var(--brand-2);font-weight:600;}
+.side-note{font-size:var(--fs-xs);color:var(--ink-3);line-height:1.7;}
+
+/* ===== 页尾 ===== */
+.site-footer{background:#101a2b;color:#c3cbd9;padding:var(--sp-5) var(--sp-3) var(--sp-3);font-size:var(--fs-s);}
+.foot-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--sp-4);}
+.foot-brand{display:flex;flex-direction:column;gap:10px;}
+.foot-brand .brand-line{display:flex;align-items:center;gap:10px;}
+.foot-brand .brand-line b{color:#fff;font-size:var(--fs-l);}
+.foot-brand p{color:#8e9aad;font-size:var(--fs-xs);margin:0;line-height:1.8;}
+.foot-col h4{font-size:var(--fs-s);color:#ffd394;margin-bottom:10px;letter-spacing:1px;}
+.foot-col ul{list-style:none;padding:0;margin:0;}
+.foot-col li{margin-bottom:6px;}
+.foot-col a{color:#c3cbd9;font-size:var(--fs-xs);}
+.foot-col a:hover{color:#ffd394;}
+.foot-bottom{
+  max-width:1180px;margin:var(--sp-4) auto 0;padding-top:var(--sp-3);border-top:1px solid #26344a;
+  display:flex;justify-content:space-between;gap:var(--sp-2);flex-wrap:wrap;font-size:var(--fs-xs);color:#7d8a9e;
+}
+
+/* ===== 回到顶部 ===== */
+.to-top{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#ffd394;
+  font-size:18px;cursor:pointer;box-shadow:var(--shadow-2);display:none;
+  align-items:center;justify-content:center;
+}
+.to-top.show{display:flex;}
+
+/* ===== 响应式 ===== */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr;}
+  aside{order:2;}
+  main{order:1;}
+  .hero-inner{grid-template-columns:1fr;gap:var(--sp-3);}
+  .hero-art{order:-1;min-height:0;}
+  .hero-stats{gap:var(--sp-3);}
+  .feat-main{grid-row:auto;}
+  .feature-grid{grid-template-columns:1fr;}
+  .foot-inner{grid-template-columns:1fr 1fr;}
+  .nav-main{order:3;width:100%;justify-content:flex-start;display:none;padding-top:8px;border-top:1px solid var(--line);}
+  .nav-main.open{display:flex;}
+  .menu-btn{display:inline-block;}
+  .overview-grid{grid-template-columns:1fr 1fr;}
+  :root{--fringe:150px;}
+}
+@media (max-width:680px){
+  :root{--fs-3xl:32px;--fs-2xl:24px;--sp-6:48px;--sp-5:36px;--sp-4:26px;}
+  .overview-grid,.cat-cols,.reviews,.news-grid{grid-template-columns:1fr;}
+  .hd-inner{gap:8px;}
+  .search-box input{width:88px;}
+  .hero{padding-top:var(--sp-4);}
+  .hero-note{position:static;margin-top:var(--sp-2);max-width:none;}
+  .foot-inner{grid-template-columns:1fr;}
+  .up-list li{flex-direction:column;gap:2px;}
+  .up-date{width:auto;}
+  .deep{padding:var(--sp-3);}
+  .to-top{width:40px;height:40px;right:12px;bottom:12px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+  .btn:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-top">
+  <div class="announce">
+    <span class="dot" aria-hidden="true"></span>
+    <span><b>秘密基地入口</b> 11 月 6 日更新：新增 7 处天台与地下空间，含 3 处免预约时段；10 月 31 日下线的鼓楼旧仓库名单已同步移除。</span>
+    <a href="/#updates">查看更新记录</a>
+  </div>
+  <header class="site-header">
+    <div class="hd-inner">
+      <a class="brand" href="/#top" aria-label="秘密基地入口 首页">
+        <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#1c2b4a"/>
+          <path d="M11 27V16a9 9 0 0 1 18 0v11" fill="none" stroke="#f2b34c" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="20" cy="25.6" r="3" fill="#f2b34c"/>
+          <path d="M15 10.5a7.6 7.6 0 0 1 10 0" fill="none" stroke="#8fa2c4" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text"><b>秘密基地入口</b><span>城市小众空间索引</span></span>
+      </a>
+      <nav class="nav-main" id="navMain" aria-label="主题导航">
+        <a href="/#overview">空间概览</a>
+        <a href="/#featured">本周精选</a>
+        <a href="/#updates">更新记录</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#reviews">访客评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">靠谱榜单</a>
+      </nav>
+      <div class="hd-tools">
+        <div class="search-box">
+          <label for="siteSearch" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">站内查找</label>
+          <input id="siteSearch" type="search" placeholder="找空间、查预约" autocomplete="off">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="navMain">菜单</button>
+      </div>
+    </div>
+    <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">2026 · 秋末版索引</span>
+      <h1 id="heroTitle">秘密基地入口</h1>
+      <p class="hero-lead">不挂牌的独立书店、居民楼里的天台录音棚、只开周五晚上的地下放映室——这里收着它们的门牌、预约规则和实地踩点记录。每条都标了能不能免预约、几点人少。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">看本周 7 处新收录</a>
+        <a class="btn btn-ghost" href="/#guide">先读体验指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>146</b><span>在册空间</span></div>
+        <div><b>23</b><span>本周实地核验</span></div>
+        <div><b>18</b><span>免预约可进</span></div>
+        <div><b>11.06</b><span>最近一次更新</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 340 300" role="img" aria-label="手绘地图构图：门洞、台阶与标注坐标">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f2b34c" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#7fa8a0" stop-opacity=".75"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="340" height="300" fill="none"/>
+        <path d="M20 250 C80 200 60 150 130 130 S250 90 320 60" fill="none" stroke="#5c7396" stroke-width="2" stroke-dasharray="6 7"/>
+        <rect x="112" y="132" width="100" height="128" rx="46" fill="none" stroke="url(#g1)" stroke-width="5"/>
+        <circle cx="162" cy="205" r="7" fill="#f2b34c"/>
+        <path d="M60 262 H130 M200 262 H282" stroke="#8fa2c4" stroke-width="3" stroke-linecap="round"/>
+        <path d="M130 262 L162 232 L200 262" fill="none" stroke="#8fa2c4" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="248" cy="112" r="5" fill="#f2b34c"/>
+        <circle cx="82" cy="186" r="4" fill="#7fa8a0"/>
+        <path d="M248 112 L286 82" stroke="#f2b34c" stroke-width="1.6"/>
+        <text x="288" y="78" fill="#ffd394" font-size="11" font-family="sans-serif">3F 天台</text>
+        <path d="M82 186 L44 160" stroke="#7fa8a0" stroke-width="1.6"/>
+        <text x="6" y="154" fill="#a8c3bd" font-size="11" font-family="sans-serif">B1 放映</text>
+        <text x="132" y="128" fill="#d6dbe6" font-size="11" font-family="sans-serif">32.06, 118.79</text>
+      </svg>
+      <div class="hero-note"><b>读图提示</b>实线是入口动线，虚线是替代绕行；地下层入口多数藏在商户后门，别按门牌号直接找。</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+    <main>
+
+      <section id="overview" aria-labelledby="ovTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">领域概览</span>
+          <h2 id="ovTitle">这类空间分四种，规则差别很大</h2>
+          <p class="sec-sub">按进入方式和收费形态切分，比按“文艺/复古”这种风格词分更实用。</p>
+        </div>
+        <div class="overview-grid">
+          <article class="ov-card">
+            <span class="num">01 / 半公开</span>
+            <h3>独立书店附设阅读间</h3>
+            <p>买一杯饮品即可使用，座位通常在 12—20 个之间。多数 22:00 关门，末位清场前 30 分钟不再放人。进门前台会问你找哪本书，这是筛人环节，不是刁难。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">02 / 预约制</span>
+            <h3>天台与屋顶放映场</h3>
+            <p>受天气和物业限制，通常只在周五、周六开放。通过小程序的排期表占位，单场 30—50 人。遇雨改期会提前 4 小时在群公告里说，别到现场才看。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">03 / 熟人带</span>
+            <h3>地下排练室与录音棚</h3>
+            <p>登记在乐器行名下，出租按小时，120—260 元/时。没有招牌，靠店主微信对接。消防安全检查较频繁，2026 年 10 月有两处因通道堆物被临时停用。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">04 / 会员制</span>
+            <h3>手工工作室与暗房</h3>
+            <p>月卡 320—480 元，含耗材基础额度。新人第一次需参加 2 小时安全讲解，暗房还要单独过一遍冲片流程。非会员可报单次体验课，价格在 180 元左右。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">05 / 时段性</span>
+            <h3>社区活动室改造空间</h3>
+            <p>白天是居委会活动场地，晚上 19:00 后交给他人在小程序上申请使用。免费但需押金 200 元，退场要自己倒垃圾、还原桌椅摆放，照片留档。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">06 / 混合型</span>
+            <h3>咖啡店后场的展演空间</h3>
+            <p>店面前场卖咖啡，后场 60 平米做小型展览和读诗会。展览免费，演出收 60—100 元门票。周三休整，不对外开放，别按营业时间推。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="featured" aria-labelledby="featTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">本周精选</span>
+          <h2 id="featTitle">七处刚核验过的具体去处</h2>
+          <p class="sec-sub">11 月 2 日至 11 月 6 日实地到访，电话与预约口径都重新问过一遍。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feat-main">
+            <img src="https://picsum.photos/seed/rooftop-cinema-16/720/460" width="720" height="460" loading="lazy" alt="天台放映场：白色幕布挂在铁架上，折叠椅排成三排，远处是城市楼群">
+            <div class="feat-body">
+              <span class="tag">天台放映 · 免预约时段</span>
+              <h3>旧纺织厂四号楼天台放映场</h3>
+              <p>楼顶原本是晒布场，现在挂 6 米宽幕布。周五 20:00 一场，周六 19:30 与 21:30 各一场。片单提前三天贴在小程序首页，多为 16 毫米胶片转数字版本。自带坐垫更舒服，现场折叠椅只有 24 把。</p>
+              <p>东侧消防通道是唯一入口，电梯到 5 楼后需走一层。遇大风临时取消，退票在群内接龙处理，不自动退款。</p>
+              <div class="dl">
+                <span>费用 <b>免费 / 需接龙</b></span>
+                <span>容量 <b>45 人</b></span>
+                <span>核验 <b>11 月 4 日</b></span>
+                <span>适合 <b>两人以上</b></span>
+              </div>
+            </div>
+          </article>
+          <div class="feat-side">
+            <article class="feat-mini">
+              <img src="https://picsum.photos/seed/indie-bookroom-22/128/128" width="128" height="128" loading="lazy" alt="独立书店阅读间：木质长桌、落地书架与台灯">
+              <div>
+                <h4>青石巷 17 号阅读间</h4>
+                <p>低消 28 元，座位 16 个，周一闭门整理书架。</p>
+              </div>
+            </article>
+            <article class="feat-mini">
+              <img src="https://picsum.photos/seed/darkroom-mono-33/128/128" width="128" height="128" loading="lazy" alt="黑白暗房：红灯下的显影盘与晾片绳">
+              <div>
+                <h4>老邮局旁黑白暗房</h4>
+                <p>月卡 420 元，新人须先上 2 小时安全课。</p>
+              </div>
+            </article>
+            <article class="feat-mini">
+              <img src="https://picsum.photos/seed/practice-room-44/128/128" width="128" height="128" loading="lazy" alt="地下排练室：音箱堆叠、隔音棉墙面">
+              <div>
+                <h4>桥下排练室 B2 层</h4>
+                <p>150 元/时起，需店主引荐，10 月复检合格。</p>
+              </div>
+            </article>
+            <article class="feat-mini">
+              <img src="https://picsum.photos/seed/community-room-55/128/128" width="128" height="128" loading="lazy" alt="社区活动室：可折叠桌椅与白板">
+              <div>
+                <h4>梧桐里社区夜间共享室</h4>
+                <p>免费，押金 200 元，19:00 后向个人开放。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="updates" aria-labelledby="upTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">更新记录</span>
+          <h2 id="upTitle">本周改动：新增、下线与规则调整</h2>
+          <p class="sec-sub">每一条都对应一次电话或现场确认，下线名单不再展示。</p>
+        </div>
+        <div class="updates">
+          <ul class="up-list">
+            <li>
+              <span class="up-date">今天 11-08</span>
+              <div>
+                <h4>桥下排练室 B2 层恢复全天开放</h4>
+                <p>10 月底因消防通道堆物临时停用，物业复检通过后取消限流，可预约时段从 18:00 起恢复至 13:00 起。</p>
+              </div>
+            </li>
+            <li>
+              <span class="up-date">昨天 11-07</span>
+              <div>
+                <h4>青石巷 17 号阅读间低消上调</h4>
+                <p>饮品低消从 22 元调为 28 元，店方说是因为豆子换了产地。座位数量未变，仍为 16 个。</p>
+              </div>
+            </li>
+            <li>
+              <span class="up-date">11-06</span>
+              <div>
+                <h4>新增 3 处免预约天台</h4>
+                <p>分别位于旧纺织厂、南城门仓库群与河堤旧水塔，均在工作日 14:00—17:00 免预约，周末仍要接龙。</p>
+              </div>
+            </li>
+            <li>
+              <span class="up-date">11-04</span>
+              <div>
+                <h4>老邮局旁暗房扩大开放日</h4>
+                <p>由每周二、四扩至周二、四、六，新增周六 10:00—16:00 场次，冲洗机位仍为 4 个。</p>
+              </div>
+            </li>
+            <li>
+              <span class="up-date">11-02</span>
+              <div>
+                <h4>梧桐里社区夜间共享室更换申请入口</h4>
+                <p>原表格迁至街道小程序，需实名登记，审核时间由 1 天缩短为当天 4 小时内出结果。</p>
+              </div>
+            </li>
+            <li>
+              <span class="up-date">10-31</span>
+              <div>
+                <h4>鼓楼旧仓库群下线</h4>
+                <p>产权方收回场地用于改造，原每周六的手作市集迁至南城门仓库群，时间不变。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="channels" aria-labelledby="chTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">分类入口</span>
+          <h2 id="chTitle">按空间类型与使用场景找</h2>
+          <p class="sec-sub">两类索引交叉使用：先看空间形态，再看你要做的事。</p>
+        </div>
+        <div class="cat-cols">
+          <div class="cat-group">
+            <h3>按空间形态</h3>
+            <div class="tag-cloud">
+              <a href="/#featured">天台放映场</a>
+              <a href="/#featured">地下排练室</a>
+              <a href="/#featured">独立书店阅读间</a>
+              <a href="/#featured">黑白暗房</a>
+              <a href="/#featured">社区夜间共享室</a>
+              <a href="/#featured">仓库存放改造空间</a>
+              <a href="/#featured">旧水塔观景平台</a>
+              <a href="/#featured">咖啡店后场展演区</a>
+            </div>
+          </div>
+          <div class="cat-group">
+            <h3>按使用场景</h3>
+            <div class="tag-cloud">
+              <a href="/#guide">一个人待一下午</a>
+              <a href="/#guide">两人安静聊天</a>
+              <a href="/#guide">看胶片电影</a>
+              <a href="/#guide">练琴不扰邻</a>
+              <a href="/#guide">冲洗黑白胶片</a>
+              <a href="/#guide">办 30 人以内读诗会</a>
+              <a href="/#guide">带外地朋友转转</a>
+            </div>
+          </div>
+          <div class="cat-group">
+            <h3>按准入方式</h3>
+            <div class="tag-cloud">
+              <a href="/#faq">免预约直接进</a>
+              <a href="/#faq">接龙占位</a>
+              <a href="/#faq">店主引荐制</a>
+              <a href="/#faq">会员月卡</a>
+              <a href="/#faq">街道实名登记</a>
+            </div>
+          </div>
+          <div class="cat-group">
+            <h3>按费用区间</h3>
+            <div class="tag-cloud">
+              <a href="/#rank">零元有押金</a>
+              <a href="/#rank">低消 30 元内</a>
+              <a href="/#rank">100—200 元单次</a>
+              <a href="/#rank">300—500 元月卡</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deep" aria-labelledby="deepTitle" class="deep">
+        <span class="sec-kicker">深度解析</span>
+        <h2 id="deepTitle">“不挂牌”未必更安静：免预约空间的真实成本</h2>
+        <p class="deep-meta">基于 2026 年 10 月 9 日至 11 月 6 日，对 24 处免预约地点的到访记录与 6 位场地方的说法对照。</p>
+
+        <h3>一、免预约的门槛，常被低估在“找门”这一步</h3>
+        <p>10 月 18 日到旧纺织厂四号楼，按地图定位落在临街的布料商铺，真正的通道在商铺北侧 23 米处的灰色铁门，门上没有任何字。当天同一时段有 9 组人在这条街上来回找。场地方的说法是，不挂牌是为了可控客流；到访者说法是，找 20 分钟才进去，进门时状态已经不好。</p>
+        <p>判断：免预约不等于低门槛。以“是否需要花 10 分钟以上找路”为标准，24 处地点里有 11 处属于高寻找成本，其中 8 处是没有电梯的老楼。愿意为此付费的人，通常是在意“不用联系人”这一点，而不是省下的几十元。</p>
+
+        <h3>二、规则前后变化：押金退还条件比免费本身更关键</h3>
+        <p>梧桐里社区夜间共享室在 9 月前用的是纸质登记本，退押金靠管理员当场签字；11 月 2 日起改为街道小程序实名预约，押金线上冻结，退场拍照上传后 4 小时内自动解冻。听上去更方便，实际增加了两道新要求：桌椅必须按照片原位还原，垃圾必须带走。</p>
+        <p>对比两版规则可以核对的差异如下：</p>
+        <table class="check-table">
+          <caption style="text-align:left;font-size:12px;color:#6b7891;padding-bottom:6px;">梧桐里共享室 9 月与 11 月预约规则对照</caption>
+          <tbody>
+            <tr><th>预约方式</th><td>纸质登记本 → 街道小程序实名登记</td></tr>
+            <tr><th>审核时长</th><td>1 个工作日 → 当天 4 小时内</td></tr>
+            <tr><th>押金形式</th><td>现金 200 元当场收 → 线上冻结 200 元</td></tr>
+            <tr><th>退场核验</th><td>管理员签字 → 拍照上传，比对桌椅原位</td></tr>
+            <tr><th>未还原结果</th><td>口头提醒 → 扣 50 元清洁费</td></tr>
+          </tbody>
+        </table>
+        <div class="note">可核对的一点：11 月 2 日后已发生的 14 次使用中，有 3 次被扣 50 元，理由都是桌椅未还原。管理员的说法是“照片清清楚楚”，使用者那边的说法是“照片没拍清桌腿位置”。这类争议不影响“免费”这个事实，但会影响实际花费。</div>
+
+        <h3>三、同一个地点，出现在不同信息层时信息不同</h3>
+        <p>旧纺织厂天台在“本周精选”里是一条可去的推荐；在“更新记录”里，它的身份是 11 月 6 日新增的三个免预约时段之一；到了这里，它是一组寻找成本的样本数据。三处说法不冲突，但关注点完全不同，这也是把同一条目分层记录的原因。</p>
+        <p>另一个例子是鼓楼旧仓库群：10 月 31 日下线这一事实只出现在更新记录；手作市集搬迁至南城门，只出现在相关资讯里，两边不互相复述。</p>
+
+        <h3>四、可被反驳的判断：地下排练室的“熟人制”正在变松</h3>
+        <p>桥下排练室 B2 层 10 月因通道堆物停用，11 月 8 日复检后恢复全天开放。店主在 11 月 6 日说，以后不强制引荐，接受电话预约，理由是“来的人自己能管好自己”。这与 2026 年上半年只走熟人介绍的做法相反。</p>
+        <p>如果把它当成趋势，证据只有 2 处：桥下 B2 层取消引荐，老邮局旁暗房把开放日从两天扩到三天。样本太少，不足以说明整个品类的准入在放宽。更稳妥的表述是：部分场地正在用“更明确的规则”替代“更模糊的人情”，代价是使用者要读更多条款。这个判断可以被反驳——只要出现 3 处以上重新收紧引荐的情况。</p>
+
+        <h3>五、读规则的方法：先看三件事，再决定去不去</h3>
+        <ol>
+          <li>看取消与改期的处理方式。旧纺织厂遇风改期不自动退款，只做群内接龙，这决定了你愿不愿意承担一次白跑。</li>
+          <li>看押金与扣费条件。梧桐里的 50 元清洁费写在细则第 4 条，登记页要往下滑才看得到。</li>
+          <li>看容量与座位的实际比例。天台放映场 45 人容量只配 24 把椅子，先到先得；带坐垫是实用建议，不是文艺姿态。</li>
+        </ol>
+        <p>这三项在多数地方的小程序页面上都有，但位置分散。与其记地点名，不如记这套检查顺序。</p>
+      </section>
+
+      <section id="guide" aria-labelledby="guideTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">体验指南</span>
+          <h2 id="guideTitle">第一次去，按这五步走</h2>
+          <p class="sec-sub">从找门到离场，每步都有具体动作，照着做能省掉大部分尴尬。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h4>出发前一晚确认当周排期</h4>
+            <p>天台与地下空间受天气、物业影响，排期常改。旧纺织厂在群公告里改期会写明“顺延一周”，不是取消。别按上个月的截图去。</p>
+          </li>
+          <li>
+            <h4>找门时先找参考物，不找门牌</h4>
+            <p>青石巷 17 号的入口在面馆右侧第二扇木门；南城门仓库群从 3 号仓的卸货口进。定位只管到街区，参考物才管到门口。</p>
+          </li>
+          <li>
+            <h4>进门先看三条告示</h4>
+            <p>多数空间会把低消、拍摄许可、离场时间贴在门内侧。老邮局旁暗房写明“闪光灯在红灯区禁用”，违反会被当场请出。</p>
+          </li>
+          <li>
+            <h4>控制音量与占用时长</h4>
+            <p>社区共享室 22:00 后需降到说话音量，因为楼上住着人。阅读间座位 16 个，长时间离座超过 30 分钟可能被让位。</p>
+          </li>
+          <li>
+            <h4>离场还原，再走</h4>
+            <p>梧桐里要求桌椅归位并拍照；天台放映场需要把坐垫带回杂物间。这一步做不好，会体现在押金和下次预约上。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="faq" aria-labelledby="faqTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">常见问题</span>
+          <h2 id="faqTitle">进门之前，问得最多的六个问题</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>天台放映场遇到下雨怎么处理？</summary>
+            <div class="faq-body">
+              <p>多数场地在开场前 4 小时于群公告决定是否取消。旧纺织厂的做法是取消后顺延一周，票不自动退，需要重新接龙占位；河堤旧水塔则直接退款到原支付渠道。两种口径都有，报名时看一眼公告底部。</p>
+            </div>
+          </details>
+          <details>
+            <summary>地下排练室为什么需要引荐？</summary>
+            <div class="faq-body">
+              <p>这类空间登记在乐器行或琴行名下，消防与噪音责任由登记方承担，出一次问题就可能整体停用。2026 年 10 月的检查中，两处因通道堆物停用，其中一处至今仍在整改。引荐制本质上是让介绍人分担一部分管理责任。11 月起有场地开始放宽，改为电话预约加实名登记。</p>
+            </div>
+          </details>
+          <details>
+            <summary>黑白暗房第一次去要准备什么？</summary>
+            <div class="faq-body">
+              <p>自备已拍完的胶片、深色上衣和指甲剪短——显影盘里药液会沾到指缝。老邮局旁暗房提供显影罐与药液，按次收 60 元耗材费。新人必须先完成 2 小时安全讲解，讲解通常安排在周六上午 10 点场次前半小时。</p>
+            </div>
+          </details>
+          <details>
+            <summary>社区夜间共享室押金多久能退？</summary>
+            <div class="faq-body">
+              <p>街道小程序的口径是退场拍照上传后 4 小时内解冻。11 月 2 日以后的记录里，最快的一次 2 小时 10 分解冻，最慢的一次隔天上午。桌椅未按原位还原会扣 50 元清洁费，这是目前唯一明确的扣费项。</p>
+            </div>
+          </details>
+          <details>
+            <summary>独立书店阅读间不买书能坐吗？</summary>
+            <div class="faq-body">
+              <p>青石巷 17 号阅读间执行的是饮品低消 28 元，坐多久不限，但离座超过 30 分钟可能被让位。店内书架可以取阅，不提供外借。周一闭门整理书架，不接待。周末 14:00—16:00 是座位最紧张的两小时。</p>
+            </div>
+          </details>
+          <details>
+            <summary>带几个人去才不算打扰别人的安静？</summary>
+            <div class="faq-body">
+              <p>阅读间与暗房以两人以内为宜，超过三人会被视为小型聚会。天台放映场对人数限制较宽，45 人容量内不分组，但现场折叠椅仅 24 把。读诗会一类活动建议使用咖啡店后场展演区，那里按场次收 60—100 元，可容纳 30 人。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="reviews" aria-labelledby="revTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">访客评论</span>
+          <h2 id="revTitle">去过的人怎么说</h2>
+          <p class="sec-sub">来自 11 月 1 日至 11 月 7 日的留言整理，保留原始语气。</p>
+        </div>
+        <div class="reviews">
+          <article class="review">
+            <div class="stars" aria-label="评分 4 星">★★★★☆</div>
+            <blockquote>旧纺织厂天台那场放的是一部 1979 年的纪录片，胶片转的数字版有划痕，反而好看。风大到幕布鼓起一块，工作人员搬了两块挡板压住。自带坐垫这句提示是真的管用。</blockquote>
+            <div class="who"><b>@阿栗</b><span>11-05</span></div>
+          </article>
+          <article class="review">
+            <div class="stars" aria-label="评分 2 星">★★☆☆☆</div>
+            <blockquote>青石巷 17 号现在低消 28 元，比上个月贵了 6 块，豆子说是换了产地，喝起来没觉得有多大区别。座位还是 16 个，周六下午两点基本满座，站了十分钟才等到位置。</blockquote>
+            <div class="who"><b>@雾中等车</b><span>11-07</span></div>
+          </article>
+          <article class="review">
+            <div class="stars" aria-label="评分 5 星">★★★★★</div>
+            <blockquote>桥下排练室 B2 层恢复全天开放之后，下午一点就能进，练两小时 300 元，比晚上排队实在。隔音没得挑，鼓打满两小时外面听不见。就是通道那条坡太滑，下雨天要小心。</blockquote>
+            <div class="who"><b>@鼓手老陈</b><span>11-06</span></div>
+          </article>
+          <article class="review">
+            <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            <blockquote>梧桐里共享室免费是真的，拍照还原也是真的麻烦。桌上有点水渍没擦，就被提示下次注意。管理员态度不差，就是规则比以前多了一页。</blockquote>
+            <div class="who"><b>@南门小周</b><span>11-03</span></div>
+          </article>
+          <article class="review">
+            <div class="stars" aria-label="评分 4 星">★★★★☆</div>
+            <blockquote>老邮局旁暗房扩到周六也能用了，冲了两卷，药液温度控制得稳。新人讲解那 2 小时别嫌长，暗房里摸黑找错开关是真出事，隔壁就有人在红灯区开了白光。</blockquote>
+            <div class="who"><b>@显影盘</b><span>11-04</span></div>
+          </article>
+          <article class="review">
+            <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            <blockquote>鼓楼旧仓库群下线前最后一次去，摊主说搬到南城门仓库群，人多了一倍，手作市集的味道淡了些。新场地的遮雨棚只有一半，下雨要自己找位置。</blockquote>
+            <div class="who"><b>@纸壳</b><span>11-02</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="news" aria-labelledby="newsTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">相关资讯</span>
+          <h2 id="newsTitle">周边变化与小道消息的核实</h2>
+          <p class="sec-sub">只收有出处或已到现场确认的条目，其余标注为待核。</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <time datetime="2026-11-06">11 月 6 日</time>
+            <h3>手作市集迁场后首个周末，南城门仓库群卸货口限行</h3>
+            <p>市场管理处通知，周六 10:00—18:00 卸货口禁止停车，摊主改由东侧车道进场。对访客的影响是入口绕行约 60 米。</p>
+          </article>
+          <article class="news-card">
+            <time datetime="2026-11-05">11 月 5 日</time>
+            <h3>河堤旧水塔观景平台加装照明</h3>
+            <p>市政施工队在水塔西侧立了两盏太阳能灯，17:30 后自动亮。此前该处 18:00 后需自备手电，找台阶容易踩空。</p>
+          </article>
+          <article class="news-card">
+            <time datetime="2026-11-03">11 月 3 日</time>
+            <h3>咖啡店后场展演区调整门票分成</h3>
+            <p>店主在群里说明，演出门票由主办方收 80%、店方留 20%，用于场务与清洁。周六场次票价仍为 80 元。</p>
+          </article>
+          <article class="news-card">
+            <time datetime="2026-11-01">11 月 1 日</time>
+            <h3>旧纺织厂四号楼电梯检修，11 月 9 日复开</h3>
+            <p>检修期间只能走楼梯，5 楼到天台还有一层。腿脚不便者可联系工作人员从货梯进入，需提前一天登记。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="rank" aria-labelledby="rankTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">靠谱榜单</span>
+          <h2 id="rankTitle">按“去了能待住”排的实用榜</h2>
+          <p class="sec-sub">评价维度：找门难度、座位是否够用、规则是否写清楚、离场是否省事。不含收费高低的加权。</p>
+        </div>
+        <ol class="rank-list">
+          <li>
+            <h4>青石巷 17 号阅读间</h4>
+            <p>找门容易，规则写在门口木板上，低消明确。扣分项是周末座位紧张。</p>
+          </li>
+          <li>
+            <h4>老邮局旁黑白暗房</h4>
+            <p>流程最清楚的一处，安全讲解写进预约页。需自备耗材部分费用不低。</p>
+          </li>
+          <li>
+            <h4>桥下排练室 B2 层</h4>
+            <p>恢复全天开放后时段宽裕，隔音实测过关。通道坡道湿地滑，扣分。</p>
+          </li>
+          <li>
+            <h4>旧纺织厂四号楼天台放映场</h4>
+            <p>片单选得有想法，容量与椅子数量不匹配，带坐垫是硬要求。</p>
+          </li>
+          <li>
+            <h4>梧桐里社区夜间共享室</h4>
+            <p>免费且审核快，还原规则较细，适合愿意按流程做的小团体。</p>
+          </li>
+          <li>
+            <h4>南城门仓库群手作市集</h4>
+            <p>迁场后动线更顺，遮雨棚不足一半，雨天体验下降明显。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="related" aria-labelledby="relTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">相关推荐</span>
+          <h2 id="relTitle">你可能还想找</h2>
+        </div>
+        <div class="rec-tags">
+          <a href="/#featured">免预约天台放映</a>
+          <a href="/#featured">单人可去的独立书店阅读间</a>
+          <a href="/#guide">地下排练室小时租</a>
+          <a href="/#featured">黑白暗房新手体验</a>
+          <a href="/#guide">社区共享室实名预约</a>
+          <a href="/#faq">押金退还条件对照</a>
+          <a href="/#news">旧水塔观景平台开放时间</a>
+          <a href="/#rank">30 人以内读诗会场地</a>
+        </div>
+      </section>
+
+    </main>
+
+    <aside aria-label="侧栏导航与提示">
+      <div class="side-card">
+        <h3>本页目录</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">空间概览</a></li>
+          <li><a href="/#featured">本周精选</a></li>
+          <li><a href="/#updates">更新记录</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">访客评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">靠谱榜单</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>本周三个免预约时段</h3>
+        <ul class="side-list">
+          <li><b>旧纺织厂天台</b> 工作日 14:00—17:00</li>
+          <li><b>南城门仓库群</b> 工作日 13:00—18:00</li>
+          <li><b>河堤旧水塔</b> 工作日 15:00—19:00</li>
+        </ul>
+        <p class="side-note">免预约不等于不限流，满员后现场会挂出告示。周末仍需接龙占位。</p>
+      </div>
+      <div class="side-card">
+        <h3>容易被忽略的三条</h3>
+        <ul class="side-list">
+          <li>旧纺织厂电梯 11 月 9 日前检修</li>
+          <li>梧桐里桌椅未还原扣 50 元</li>
+          <li>暗房红灯区禁用闪光灯</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="brand-line">
+        <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#26344a"/>
+          <path d="M11 27V16a9 9 0 0 1 18 0v11" fill="none" stroke="#f2b34c" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="20" cy="25.6" r="3" fill="#f2b34c"/>
+        </svg>
+        <b>秘密基地入口</b>
+      </div>
+      <p>记录城市里不挂牌、不投广告的小空间，把找门、预约、离场这些琐碎步骤写清楚，让人少跑一次空路。</p>
+      <p>站点内的开放时间与费用均来自现场或电话确认，日期标注在对应条目旁。</p>
+    </div>
+    <div class="foot-col">
+      <h4>空间类型</h4>
+      <ul>
+        <li><a href="/#featured">天台放映场</a></li>
+        <li><a href="/#featured">地下排练室</a></li>
+        <li><a href="/#featured">独立书店阅读间</a></li>
+        <li><a href="/#featured">黑白暗房</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>使用帮助</h4>
+      <ul>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#rank">靠谱榜单</a></li>
+        <li><a href="/#updates">更新记录</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>关于内容</h4>
+      <ul>
+        <li><a href="/#overview">空间概览</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#reviews">访客评论</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+      <p style="font-size:12px;color:#7d8a9e;margin-top:10px;">页面中的空间条目、评论与访问数据为示例内容，用于展示信息组织方式。</p>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 秘密基地入口 · 内容更新于 2026 年 11 月 8 日</span>
+    <span>示例数据说明：条目信息为演示用途，实际前往请以场地方公告为准</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "秘密基地入口",
+  "inLanguage": "zh-CN",
+  "description": "收录城市中不挂牌的小众空间，整理预约方式、开放时间与实地到访记录。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "zh-CN",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "天台放映场遇到下雨怎么处理？",
+      "acceptedAnswer": {"@type": "Answer", "text": "多数场地在开场前 4 小时于群公告决定是否取消。旧纺织厂的做法是取消后顺延一周，票不自动退，需要重新接龙占位；河堤旧水塔则直接退款到原支付渠道。"}
+    },
+    {
+      "@type": "Question",
+      "name": "地下排练室为什么需要引荐？",
+      "acceptedAnswer": {"@type": "Answer", "text": "这类空间登记在乐器行或琴行名下，消防与噪音责任由登记方承担。引荐制让介绍人分担一部分管理责任。11 月起有场地开始放宽，改为电话预约加实名登记。"}
+    },
+    {
+      "@type": "Question",
+      "name": "黑白暗房第一次去要准备什么？",
+      "acceptedAnswer": {"@type": "Answer", "text": "自备已拍完的胶片、深色上衣并剪短指甲。老邮局旁暗房提供显影罐与药液，按次收 60 元耗材费，新人须先完成 2 小时安全讲解。"}
+    },
+    {
+      "@type": "Question",
+      "name": "社区夜间共享室押金多久能退？",
+      "acceptedAnswer": {"@type": "Answer", "text": "街道小程序口径为退场拍照上传后 4 小时内解冻，11 月 2 日以来最快 2 小时 10 分，最慢隔天上午。桌椅未按原位还原会扣 50 元清洁费。"}
+    },
+    {
+      "@type": "Question",
+      "name": "独立书店阅读间不买书能坐吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "青石巷 17 号阅读间执行饮品低消 28 元，不限时长，离座超过 30 分钟可能被让位。周一闭门整理书架，不接待。"}
+    },
+    {
+      "@type": "Question",
+      "name": "带几个人去才不算打扰别人的安静？",
+      "acceptedAnswer": {"@type": "Answer", "text": "阅读间与暗房以两人以内为宜，超过三人会被视为小型聚会。天台放映场容量 45 人，现场折叠椅 24 把。读诗会一类建议用咖啡店后场展演区，可容纳 30 人。"}
+    }
+  ]
+}
+</script>
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var navMain = document.getElementById('navMain');
+  if(menuBtn && navMain){
+    menuBtn.addEventListener('click', function(){
+      var open = navMain.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.textContent = open ? '收起' : '菜单';
+    });
+    navMain.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 1000){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      feedback.textContent = '请输入要查找的空间或关键词，例如“天台”“暗房”“押金”。';
+      feedback.classList.add('on');
+      return;
+    }
+    var target = null;
+    var sections = document.querySelectorAll('main section');
+    for(var i=0;i<sections.length;i++){
+      if(sections[i].textContent.indexOf(q) !== -1){ target = sections[i]; break; }
+    }
+    if(target){
+      feedback.textContent = '已定位到含“' + q + '”的板块，向下滚动查看。';
+      feedback.classList.add('on');
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    }else{
+      feedback.textContent = '没有找到与“' + q + '”相关的内容，换一个词试试，例如“阅读间”“排练室”。';
+      feedback.classList.add('on');
+    }
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  var tick = false;
+  function onScroll(){
+    if(toTop){
+      if(window.scrollY > 500){ toTop.classList.add('show'); }
+      else{ toTop.classList.remove('show'); }
+    }
+    if(!tick){
+      tick = true;
+      window.requestAnimationFrame(function(){
+        highlight();
+        tick = false;
+      });
+    }
+  }
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  var sideLinks = document.querySelectorAll('#sideNav a');
+  var targets = [];
+  sideLinks.forEach(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    var el = document.getElementById(id);
+    if(el){ targets.push({link:a, el:el}); }
+  });
+  function highlight(){
+    var pos = window.scrollY + 220;
+    var current = null;
+    targets.forEach(function(t){
+      if(t.el.offsetTop <= pos){ current = t; }
+    });
+    sideLinks.forEach(function(a){ a.classList.remove('active'); });
+    if(current){ current.link.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+  highlight();
+})();
+</script>
+</body>
+            </html>
