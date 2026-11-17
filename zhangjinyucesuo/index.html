@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张津瑜厕所门事件-舆情时间线与传播机制梳理</title>
+<meta name="description" content="张津瑜厕所门事件是一起围绕隐私视频外泄与二次传播的舆情样本。本文按日期整理事件节点、平台处置、法律责任边界与围观者常见误读，附FAQ与可核对判断清单。">
+<meta name="keywords" content="张津瑜厕所门事件">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a4a'/%3E%3Cpath d='M18 46V18h9v10h10V18h9v28h-9V36H27v10z' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b2333;
+  --ink-2:#4a5568;
+  --ink-3:#6b7688;
+  --paper:#f7f5f1;
+  --card:#ffffff;
+  --line:#ddd8cf;
+  --line-2:#e9e5dd;
+  --brand:#1b2a4a;
+  --brand-2:#2f4470;
+  --accent:#c2413a;
+  --accent-soft:#f6e6e3;
+  --gold:#b5892f;
+  --gold-soft:#f7efdc;
+  --ok:#2f6b4f;
+  --radius:10px;
+  --radius-s:6px;
+  --shadow:0 2px 10px rgba(27,35,51,.07);
+  --shadow-l:0 10px 30px rgba(27,35,51,.12);
+  --sp:clamp(16px,2.4vw,28px);
+  --fs-h1:clamp(28px,4.4vw,46px);
+  --fs-h2:clamp(21px,2.6vw,28px);
+  --fs-h3:clamp(17px,1.9vw,20px);
+  --fs-base:16px;
+  --ann-h:38px;
+  --head-h:62px;
+  --sticky-off:calc(var(--ann-h) + var(--head-h));
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:var(--fs-base);line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 .6em}
+p{margin:0 0 1em}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin:.3em 0}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.wrap{width:min(1180px,100% - 2*var(--sp));margin-inline:auto}
+section[id],div[id].anchor{scroll-margin-top:calc(var(--sticky-off) + 14px)}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--ann-h);
+  background:var(--brand);color:#e9eef8;display:flex;align-items:center;
+  font-size:13.5px;letter-spacing:.2px;overflow:hidden;
+}
+.announce .wrap{display:flex;gap:14px;align-items:center;min-width:0}
+.announce .tag{
+  flex:none;background:var(--gold);color:#22283a;font-weight:700;
+  font-size:12px;padding:1px 8px;border-radius:99px;
+}
+.announce p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce a{color:#ffe6b8;text-decoration:underline;text-underline-offset:2px}
+
+/* 页头 */
+.site-head{
+  position:sticky;top:var(--ann-h);z-index:55;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+}
+.head-inner{display:flex;align-items:center;gap:18px;height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-name{font-weight:800;font-size:17px;color:var(--brand);letter-spacing:.5px}
+.brand-name small{display:block;font-size:11px;font-weight:500;color:var(--ink-3);letter-spacing:1px}
+.nav-main{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav-main a{
+  padding:6px 10px;border-radius:var(--radius-s);font-size:14.5px;color:var(--ink-2);white-space:nowrap;
+}
+.nav-main a:hover{background:#eef1f7;text-decoration:none;color:var(--brand)}
+.head-entry{display:flex;gap:8px;align-items:center;flex:none}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:99px;
+  font-size:14.5px;font-weight:600;border:1px solid transparent;cursor:pointer;
+  transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-1px);text-decoration:none}
+.btn-solid{background:var(--brand);color:#fff}
+.btn-solid:hover{background:var(--brand-2);box-shadow:var(--shadow)}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand-2)}
+.menu-btn{display:none;margin-left:auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:7px 10px;font-size:14px;color:var(--ink);cursor:pointer}
+.search{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:4px 6px 4px 12px;background:#fff}
+.search input{border:0;outline:0;font:inherit;font-size:14px;width:132px;background:transparent;color:var(--ink)}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:99px;padding:5px 11px;font-size:13px;cursor:pointer}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;background:
+    radial-gradient(1100px 420px at 88% -12%,#dfe6f4 0%,transparent 62%),
+    linear-gradient(180deg,#fbfaf7,#f2eff0);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(30px,5vw,64px) 0}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:1.5px;color:var(--accent);font-weight:700;background:var(--accent-soft);padding:3px 12px;border-radius:99px;margin-bottom:16px}
+.hero h1{font-family:var(--serif);font-size:var(--fs-h1);letter-spacing:-.5px;color:var(--brand);margin-bottom:14px}
+.hero-lead{font-size:clamp(15.5px,1.5vw,17.5px);color:var(--ink-2);max-width:36em}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;padding-top:20px;border-top:1px dashed var(--line)}
+.hero-stats b{display:block;font-family:var(--serif);font-size:24px;color:var(--brand)}
+.hero-stats span{font-size:12.5px;color:var(--ink-3);letter-spacing:.5px}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;border-radius:14px;box-shadow:var(--shadow-l)}
+.hero-art .cap{font-size:12.5px;color:var(--ink-3);margin-top:10px;text-align:right}
+
+/* 主布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 302px;gap:clamp(20px,3vw,40px);padding:clamp(26px,3.6vw,44px) 0 10px;align-items:start}
+.main-col{min-width:0}
+.side-col{min-width:0;position:sticky;top:calc(var(--sticky-off) + 14px)}
+.side-card{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin-bottom:16px}
+.side-card h3{font-size:14.5px;letter-spacing:1px;color:var(--ink-3);margin:0 0 10px;font-weight:700}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14.5px}
+.side-nav li{margin:0}
+.side-nav a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--ink-2);border-radius:0 var(--radius-s) var(--radius-s) 0}
+.side-nav a:hover{background:#f2f4f9;text-decoration:none}
+.side-nav a.active{color:var(--brand);font-weight:700;border-left-color:var(--accent);background:#f2f4f9}
+.side-tags{display:flex;flex-wrap:wrap;gap:7px}
+.side-tags a{font-size:13px;padding:4px 10px;border-radius:99px;background:#f1f2f6;color:var(--ink-2);border:1px solid var(--line-2)}
+.side-tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 板块通用 */
+.block{margin:0 0 clamp(30px,4vw,52px)}
+.block-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.block-head .no{font-family:var(--serif);font-size:13px;color:var(--gold);letter-spacing:1px;font-weight:700}
+.block-head h2{font-size:var(--fs-h2);margin:0;color:var(--brand);font-family:var(--serif);letter-spacing:.2px}
+.block-head .note{margin-left:auto;font-size:12.5px;color:var(--ink-3)}
+.prose p{color:#2a3344}
+.prose h3{font-size:var(--fs-h3);color:var(--brand);margin:22px 0 8px}
+.muted{color:var(--ink-3);font-size:13.5px}
+.pill{display:inline-block;font-size:12px;padding:2px 9px;border-radius:99px;background:#eef1f7;color:var(--brand-2);margin-right:6px}
+.pill-fact{background:#e7f1ea;color:var(--ok)}
+.pill-reply{background:#eaf0fb;color:#2f4c85}
+.pill-quote{background:#f4efe2;color:#8a6a1e}
+.pill-guess{background:#f6e6e3;color:var(--accent)}
+
+/* 概览网格 */
+.overview-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ov-cell{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:14px 15px}
+.ov-cell b{display:block;font-family:var(--serif);font-size:20px;color:var(--brand)}
+.ov-cell span{font-size:13px;color:var(--ink-3);display:block;margin-top:2px}
+.ov-cell p{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.overview-note{margin-top:12px;font-size:13.5px;color:var(--ink-2);background:#fff;border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 var(--radius-s) var(--radius-s) 0}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-l)}
+.card img{width:100%;height:150px;object-fit:cover}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:16.5px;margin:0 0 8px;color:var(--brand)}
+.card-body p{font-size:14px;color:var(--ink-2);margin:0 0 12px;flex:1}
+.card-meta{font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap}
+.card-link{font-size:13.5px;font-weight:700;color:var(--accent)}
+
+/* 更新列表 */
+.updates{border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.upd{display:grid;grid-template-columns:92px 1fr auto;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line-2);align-items:start}
+.upd:last-child{border-bottom:0}
+.upd time{font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:2px}
+.upd p{margin:0;font-size:14.5px}
+.upd p b{color:var(--brand)}
+.upd .badge{font-size:11.5px;padding:2px 8px;border-radius:99px;background:#eef1f7;color:var(--brand-2);white-space:nowrap}
+
+/* 分类索引 */
+.chan-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.chan{display:block;background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius-s);padding:12px 14px;color:var(--ink);transition:border-color .15s,background .15s}
+.chan:hover{border-color:var(--brand-2);background:#f5f7fb;text-decoration:none}
+.chan b{display:block;font-size:15px;color:var(--brand)}
+.chan span{font-size:12.5px;color:var(--ink-3);display:block;margin-top:2px}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line-2);border-radius:14px;padding:clamp(18px,2.6vw,30px);box-shadow:var(--shadow)}
+.deep h3{border-left:4px solid var(--gold);padding-left:10px}
+.deep .judge{background:var(--gold-soft);border:1px solid #eadcbc;border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+.deep .judge strong{color:#7a5c18}
+.check-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 18px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:#f3f1ec;color:var(--brand);font-weight:700;white-space:nowrap}
+.check-table td b{color:var(--brand)}
+.timeline{list-style:none;padding:0;margin:16px 0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 16px 20px}
+.timeline li::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px #fff}
+.timeline time{font-size:12.5px;color:var(--gold);font-weight:700;display:block;font-variant-numeric:tabular-nums}
+.timeline p{margin:2px 0 0;font-size:14.5px;color:var(--ink-2)}
+blockquote{margin:16px 0;padding:14px 18px;background:#f6f5f2;border-left:4px solid var(--brand-2);color:#33405a;font-family:var(--serif);font-size:15.5px;border-radius:0 var(--radius-s) var(--radius-s) 0}
+blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-size:12.5px;color:var(--ink-3);margin-top:8px}
+
+/* 步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:14px 16px 14px 58px}
+.steps li::before{counter-increment:st;content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:13px;font-family:var(--serif);font-size:19px;font-weight:700;color:var(--gold)}
+.steps h4{margin:0 0 4px;font-size:15.5px;color:var(--brand)}
+.steps p{margin:0;font-size:14.5px;color:var(--ink-2)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{border:1px solid var(--line-2);border-radius:var(--radius);padding:15px 16px;background:var(--card)}
+.panel h4{margin:0 0 8px;font-size:15.5px;display:flex;align-items:center;gap:8px}
+.panel.left h4{color:var(--accent)}
+.panel.right h4{color:var(--ok)}
+.panel ul{margin:0;padding-left:1.15em;font-size:14.5px;color:var(--ink-2)}
+.panel.left{background:#fdf7f6;border-color:#eddcd8}
+.panel.right{background:#f5faf6;border-color:#d7e8dc}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius-s);margin-bottom:9px;padding:0 16px}
+.faq details[open]{border-color:#c9d3e6;box-shadow:var(--shadow)}
+.faq summary{cursor:pointer;padding:13px 0;font-weight:700;font-size:15.5px;color:var(--brand);list-style:none;display:flex;gap:10px;align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋";color:var(--gold);font-weight:700;flex:none}
+.faq details[open] summary::before{content:"－"}
+.faq .ans{padding:0 0 14px 24px;font-size:14.5px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:13px 16px}
+.cmt-top{display:flex;align-items:center;gap:9px;margin-bottom:5px}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--brand-2);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700;flex:none}
+.cmt-top b{font-size:14px;color:var(--ink)}
+.cmt-top time{font-size:12.5px;color:var(--ink-3);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt p{margin:0;font-size:14.5px;color:#2a3344}
+.cmt p em{font-style:normal;background:#fdf3d6;padding:0 2px;border-radius:2px}
+
+/* 资讯 */
+.news-list{display:grid;gap:0;border:1px solid var(--line-2);border-radius:var(--radius);background:var(--card);overflow:hidden}
+.news-item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line-2);align-items:baseline}
+.news-item:last-child{border-bottom:0}
+.news-item h4{margin:0;font-size:15px;color:var(--ink)}
+.news-item h4 a{color:var(--brand)}
+.news-item p{margin:3px 0 0;font-size:13.5px;color:var(--ink-3)}
+
+/* 标签推荐 */
+.reco{display:flex;flex-wrap:wrap;gap:9px}
+.reco a{font-size:14px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px;color:var(--ink-2)}
+.reco a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 榜单 
+ */
+.rank{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden}
+.rank li{display:grid;grid-template-columns:34px 1fr auto;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line-2);align-items:center}
+.rank li:last-child{border-bottom:0}
+.rank .rk{font-family:var(--serif);font-weight:700;color:var(--gold);font-size:16px}
+.rank .rk.hot{color:var(--accent)}
+.rank p{margin:0;font-size:14.5px}
+.rank .num{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* 页尾 */
+.site-foot{background:#141c2c;color:#b8c2d4;margin-top:40px;padding:40px 0 26px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
+.site-foot h4{color:#fff;font-size:14px;letter-spacing:1px;margin:0 0 10px}
+.site-foot a{color:#b8c2d4}
+.site-foot a:hover{color:#fff}
+.site-foot ul{list-style:none;padding:0;margin:0}
+.site-foot li{margin:5px 0}
+.foot-brand{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.foot-brand svg{width:30px;height:30px}
+.foot-brand b{color:#fff;font-size:16px;letter-spacing:.5px}
+.foot-note{font-size:12.5px;color:#8794ab;line-height:1.7}
+.foot-bottom{border-top:1px solid #2a3346;margin-top:26px;padding-top:16px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px;color:#8794ab}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;
+}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-2px)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.search-empty{display:none;font-size:13.5px;color:var(--accent);background:var(--accent-soft);border-radius:var(--radius-s);padding:8px 12px;margin-top:8px}
+.search-empty.on{display:block}
+
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side-col{position:static;margin-top:8px}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chan-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-main{display:none}
+  .menu-btn{display:inline-block}
+  .head-entry .search{display:none}
+  .nav-main.open{
+    display:flex;position:absolute;left:0;right:0;top:var(--head-h);
+    background:#fff;border-bottom:1px solid var(--line);padding:10px var(--sp) 16px;
+    flex-direction:column;gap:2px;box-shadow:var(--shadow-l);margin:0;
+  }
+  .nav-main.open a{padding:10px;font-size:15.5px}
+}
+@media (max-width:640px){
+  .hero-inner{grid-template-columns:1fr;padding-top:26px}
+  .hero-art{order:-1}
+  .hero-art .cap{text-align:left}
+  .card-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .upd{grid-template-columns:78px 1fr}
+  .upd .badge{grid-column:2;justify-self:start;margin-top:-4px}
+  .overview-grid,.chan-index{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .announce p{white-space:normal;font-size:12.5px;line-height:1.4;max-height:var(--ann-h);overflow:hidden}
+  .hero-stats{gap:18px}
+  .hero-stats b{font-size:21px}
+  #toTop{right:12px;bottom:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.card:hover,#toTop:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="announce" id="announce">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <p>2026-11-08 10:40　平台处置节点表补入 11-06 视频下架反馈；责任判断清单新增“二次上传”一项。<a href="/#updates">查看改动</a></p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/#" aria-label="首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1b2a4a"/>
+        <path d="M16 46V18h9v10h14V18h9v28h-9V36H25v10z" fill="#e8b04b"/>
+      </svg>
+      <span class="brand-name">张津瑜厕所门事件<small>舆情节点梳理</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMain">菜单</button>
+    <nav class="nav-main" id="navMain" aria-label="主题导航">
+      <a href="/#overview">事件概览</a>
+      <a href="/#featured">精选内容</a>
+      <a href="/#updates">更新日志</a>
+      <a href="/#channels">分类索引</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">读者评论</a>
+    </nav>
+    <div class="head-entry">
+      <form class="search" id="searchForm" role="search" aria-label="站内查找">
+        <label class="sr-only" for="q">查找条目</label>
+        <input id="q" name="q" type="search" placeholder="查条目/平台/日期" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-kicker">隐私外泄 · 二次传播 · 平台治理</span>
+        <h1 id="heroTitle">张津瑜厕所门事件</h1>
+        <p class="hero-lead">一段在室内被拍摄的隐私视频于 2026 年 10 月下旬外流，随后在短视频剪辑号、网盘链接和“求资源”评论区之间反复搬运。这里按日期把可见节点、平台处置动作和责任判断分开记录，方便核对哪一步是事实、哪一步只是转述。</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="/#deep">读责任判断清单</a>
+          <a class="btn btn-ghost" href="/#updates">看节点时间表</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>9</b><span>个可核对传播节点</span></div>
+          <div><b>4</b><span>家平台的处置动作</span></div>
+          <div><b>23</b><span>条归类后的事实条目</span></div>
+          <div><b>11-08</b><span>本期页面核对日</span></div>
+        </div>
+      </div>
+      <figure class="hero-art" style="margin:0">
+        <svg viewBox="0 0 520 380" role="img" aria-label="传播链路示意图：拍摄端、首发、剪辑重发、评论区索取、平台下架五段">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1b2a4a"/><stop offset="1" stop-color="#2f4470"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="380" rx="14" fill="url(#bg)"/>
+          <g fill="none" stroke="#7f95c4" stroke-width="1.4" opacity=".55">
+            <circle cx="260" cy="86" r="54"/>
+            <circle cx="260" cy="86" r="86" opacity=".55"/>
+            <circle cx="260" cy="86" r="120" opacity=".3"/>
+          </g>
+          <g font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="13">
+            <g>
+              <rect x="40" y="42" width="96" height="34" rx="17" fill="#e8b04b"/>
+              <text x="88" y="64" text-anchor="middle" fill="#1b2333" font-weight="700">拍摄端</text>
+            </g>
+            <g>
+              <rect x="360" y="42" width="112" height="34" rx="17" fill="#c2413a"/>
+              <text x="416" y="64" text-anchor="middle" fill="#fff" font-weight="700">剪辑重发</text>
+            </g>
+            <g>
+              <rect x="196" y="150" width="128" height="34" rx="17" fill="#f1f3f8"/>
+              <text x="260" y="172" text-anchor="middle" fill="#1b2a4a" font-weight="700">首发上传</text>
+            </g>
+            <g>
+              <rect x="30" y="242" width="150" height="34" rx="17" fill="#f1f3f8"/>
+              <text x="105" y="264" text-anchor="middle" fill="#1b2a4a" font-weight="700">评论区索取资源</text>
+            </g>
+            <g>
+              <rect x="330" y="242" width="150" height="34" rx="17" fill="#2f6b4f"/>
+              <text x="405" y="264" text-anchor="middle" fill="#fff" font-weight="700">平台下架</text>
+            </g>
+          </g>
+          <g stroke="#8fa5cf" stroke-width="1.6" stroke-dasharray="5 5" fill="none">
+            <path d="M136 59 L196 150"/>
+            <path d="M324 150 L360 59"/>
+            <path d="M256 184 L150 242"/>
+            <path d="M264 184 L370 242"/>
+          </g>
+          <text x="260" y="330" text-anchor="middle" fill="#c7d3e8" font-size="12.5" letter-spacing="1.5">链路越长，删除越难覆盖全部副本</text>
+        </svg>
+        <figcaption class="cap">示意图：五段传播路径与可见处置动作</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 01 领域概览 -->
+      <section class="block" id="overview" aria-labelledby="h-overview">
+        <div class="block-head">
+          <span class="no">01</span>
+          <h2 id="h-overview">事件概览：三个可核对的事实面</h2>
+          <span class="note">核对日 2026-11-08</span>
+        </div>
+        <div class="prose">
+          <p>把这件事当成一条完整故事来读，很容易把“视频存在”“视频被传播”“谁应负责”混成一句结论。更稳的做法是拆成三面：内容面（视频是否真实、是否涉及隐私场所）、传播面（在哪些平台以什么形式扩散）、处置面（下架、封号、报案分别发生在哪一天）。三面的更新节奏不一样，混在一起就会出现“说已经处理完了”与“还能搜到”同时成立的矛盾。</p>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-cell"><b>10-26</b><span>首次出现公开讨论</span><p>某短视频平台出现打码片段，标题含地点关键词，播放量在 3 小时内过万。</p></div>
+          <div class="ov-cell"><b>11-01</b><span>首次集中下架</span><p>两家内容平台在同一日清理相关话题页，搜索建议词同步消失。</p></div>
+          <div class="ov-cell"><b>11-05</b><span>剪辑号二次搬运</span><p>以“解说版”“配音版”形式重新上传，规避原关键词匹配。</p></div>
+          <div class="ov-cell"><b>11-07</b><span>当事人代理声明</span><p>声明只说“已委托律师取证”，未披露拍摄时间与场所归属。</p></div>
+        </div>
+        <p class="overview-note">三种信息要分开看：视频本身的真伪属于事实层；平台是否及时处置属于流程层；“谁该担责”属于法律与伦理判断层，后两层不能靠转发量倒推。</p>
+      </section>
+
+      <!-- 02 精选内容 -->
+      <section class="block" id="featured" aria-labelledby="h-featured">
+        <div class="block-head">
+          <span class="no">02</span>
+          <h2 id="h-featured">精选内容推荐</h2>
+          <span class="note">按用途分类，非按热度</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/zjy-timeline-01/640/300" width="640" height="300" loading="lazy" alt="时间线笔记：从10月26日到11月7日的九个节点手写标注">
+            <div class="card-body">
+              <h3>九个节点：从首发到代理声明</h3>
+              <p>把每条记录的来源标注为“平台页面截图”“媒体转述”“当事人声明”，三种来源的可核对程度不同，时间误差以小时计。</p>
+              <div class="card-meta"><span>10-26 至 11-07</span><span>来源分级</span></div>
+              <a class="card-link" href="/#deep">读判断清单 →</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/zjy-platform-02/640/300" width="640" height="300" loading="lazy" alt="四家平台处置动作对照，标注删除、限制搜索、封禁账号三类结果">
+            <div class="card-body">
+              <h3>四家平台处置动作对照</h3>
+              <p>删除视频、限制搜索建议、封禁账号是三种不同力度的动作。只有第三种会真正切断账号的连续发布能力，前两种通常几小时内被新账号绕开。</p>
+              <div class="card-meta"><span>处置对照</span><span>11-01 / 11-05</span></div>
+              <a class="card-link" href="/#guide">看操作步骤 →</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/zjy-legal-03/640/300" width="640" height="300" loading="lazy" alt="民法典与治安管理处罚法相关条款摘录，书页翻开的近景">
+            <div class="card-body">
+              <h3>隐私传播的三条法律路径</h3>
+              <p>民事上的隐私权与肖像权、行政上的传播淫秽信息、刑事上的侵犯公民个人信息，三条路径构成要件不同，不能一句“违法”全部覆盖。</p>
+              <div class="card-meta"><span>规则梳理</span><span>条文对照</span></div>
+              <a class="card-link" href="/#faq">看常见问题 →</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/zjy-comment-04/640/300" width="640" height="300" loading="lazy" alt="评论区截图重绘，多行短评论围绕求资源与劝阻展开">
+            <div class="card-body">
+              <h3>评论区里的四类声音</h3>
+              <p>索取资源、追问真伪、劝阻转发、指责当事人。四类发言的时间分布差异明显：索取类集中在首发后 24 小时，劝阻类在平台下架后才变多。</p>
+              <div class="card-meta"><span>读者评论</span><span>11-02 抽样</span></div>
+              <a class="card-link" href="/#comments">读评论摘录 →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 03 最新更新 -->
+      <section class="block" id="updates" aria-labelledby="h-updates">
+        <div class="block-head">
+          <span class="no">03</span>
+          <h2 id="h-updates">最新更新记录</h2>
+          <span class="note">仅记录可定位的公开动作</span>
+        </div>
+        <div class="updates">
+          <div class="upd"><time datetime="2026-11-08">11-08 今天</time><p><b>处置节点表补入一项。</b>某内容平台在 11-06 晚间对 12 个剪辑号执行了限制发布，理由是“重复上传侵权内容”，未单独说明是否为本案。</p><span class="badge">处置</span></div>
+          <div class="upd"><time datetime="2026-11-07">11-07</time><p><b>代理声明发布。</b>文本共 137 字，只提“已委托律师固定证据”，没有说明拍摄时间、场所以及视频是否经过剪辑。</p><span class="badge">事实</span></div>
+          <div class="upd"><time datetime="2026-11-06">11-06</time><p>网盘链接分享形式抬头。以“资料包”“学习资料”作文件名，实际内容与标题不符，属于最常见的规避审核做法。</p><span class="badge">传播</span></div>
+          <div class="upd"><time datetime="2026-11-05">11-05</time><p>剪辑重发集中出现。解说版把时长压到 40 秒以内，画面做了镜像和裁切，原关键词被同音字替代。</p><span class="badge">传播</span></div>
+          <div class="upd"><time datetime="2026-11-02">11-02</time><p>话题页首次被整体隐藏。搜索建议不再补全相关词，但站内仍能搜到讨论帖，删帖与限流并行。</p><span class="badge">处置</span></div>
+          <div class="upd"><time datetime="2026-11-01">11-01</time><p>两家平台同日清理。一家删除视频与话题，另一家仅关闭评论区并保留正文，处理口径不一致。</p><span class="badge">处置</span></div>
+          <div class="upd"><time datetime="2026-10-26">10-26</time><p>首次公开讨论出现。首发账号使用打码片段，配文含地点关键词，3 小时播放量约 1.2 万。</p><span class="badge">起点</span></div>
+        </div>
+      </section>
+
+      <!-- 04 分类索引 -->
+      <section class="block" id="channels" aria-labelledby="h-channels">
+        <div class="block-head">
+          <span class="no">04</span>
+          <h2 id="h-channels">分类索引</h2>
+          <span class="note">11 个常查类别</span>
+        </div>
+        <div class="chan-index">
+          <a class="chan" href="/#deep"><b>隐私视频外泄责任</b><span>拍摄、上传、转发三段责任</span></a>
+          <a class="chan" href="/#updates"><b>平台下架时间线</b><span>按日期的处置动作</span></a>
+          <a class="chan" href="/#guide"><b>二次传播取证方法</b><span>截图、录屏、公证</span></a>
+          <a class="chan" href="/#faq"><b>转发是否构成违法</b><span>民事与行政两条路径</span></a>
+          <a class="chan" href="/#comments"><b>评论区索取资源现象</b><span>话术与规避词</span></a>
+          <a class="chan" href="/#deep"><b>剪辑号规避审核手法</b><span>镜像、裁切、同音字</span></a>
+          <a class="chan" href="/#news"><b>媒体报道口径差异</b><span>标题与正文的落差</span></a>
+          <a class="chan" href="/#guide"><b>当事人维权流程</b><span>从取证到报案的顺序</span></a>
+          <a class="chan" href="/#faq"><b>网盘分享链接处理</b><span>举报入口与响应周期</span></a>
+          <a class="chan" href="/#rank"><b>传播节点热度排序</b><span>按可核对动作排</span></a>
+          <a class="chan" href="/#reco"><b>同类隐私事件对照</b><span>传播路径的共同点</span></a>
+        </div>
+      </section>
+
+      <!-- 05 深度解析 -->
+      <section class="block" id="deep" aria-labelledby="h-deep">
+        <div class="block-head">
+          <span class="no">05</span>
+          <h2 id="h-deep">深度解析：删除时间比删除数量更关键</h2>
+          <span class="note">全页唯一主体阅读区</span>
+        </div>
+        <div class="deep prose">
+          <p>这起事件里，讨论最多的两个数字是“播放量”和“下架条数”。两个数都不可靠。播放量在剪辑号之间互相搬运时会重复计数；下架条数只统计被主动识别的条目，镜像版和改标题版不在其中。真正能比较的指标只有一个：从首条公开内容出现到平台首次处置，中间隔了多久。</p>
+
+          <div class="judge">
+            <strong>可被引用的判断：</strong>本案首条公开内容出现在 10-26 上午，首家平台清理发生在 11-01，间隔约 6 天。在这 6 天里，内容形态从“打码片段”变成“解说剪辑”，传播媒介从站内视频扩展到网盘链接。处置每延后一天，需要清理的副本数量大致翻倍。
+          </div>
+
+          <h3>一、6 天窗口里发生了什么：从单条到多形态</h3>
+          <ul class="timeline">
+            <li><time datetime="2026-10-26">10-26</time><p>首发账号上传 47 秒打码片段，标题含地点词。此时只有一个版本，删除一条即可切断源头。</p></li>
+            <li><time datetime="2026-10-28">10-28</time><p>出现三个搬运号，均直接下载转发，画面未改。此时仍是同一份文件，平台可用文件指纹批量匹配。</p></li>
+            <li><time datetime="2026-10-30">10-30</time><p>首个剪辑版出现，时长压到 38 秒，画面镜像。文件指纹失效，只能靠关键词与人工巡查。</p></li>
+            <li><time datetime="2026-11-01">11-01</time><p>两家平台同日清理，但只处理了原始关键词下的条目，同音字标题仍可见。</p></li>
+            <li><time datetime="2026-11-05">11-05</time><p>网盘链接分享抬头，文件名与内容无关，已脱离内容平台的审核范围。</p></li>
+          </ul>
+          <p>把这五条连起来看，处置难点不在“有没有下架”，而在于内容形态变化后，原有关键词库和文件指纹同时失效。10-26 到 10-30 是成本最低的窗口；11-01 之后，清理已经变成持续巡查，而不是一次性动作。</p>
+
+          <h3>二、平台口径差异：删视频、关评论、封账号是三种力度</h3>
+          <table class="check-table">
+            <thead><tr><th>动作</th><th>覆盖面</th><th>可被绕开的方式</th><th>本案出现时间</th></tr></thead>
+            <tbody>
+              <tr><td><b>删除单条视频</b></td><td>只处理被举报的那一条</td><td>换账号重发，5 分钟内可完成</td><td>11-01</td></tr>
+              <tr><td><b>关闭评论区</b></td><td>切断“求资源”的聚合入口</td><td>转战私信与其他平台</td><td>11-01</td></tr>
+              <tr><td><b>隐藏话题页与搜索建议</b></td><td>降低偶发触达</td><td>直接搜索账号名仍可进入</td><td>11-02</td></tr>
+              <tr><td><b>限制账号发布</b></td><td>切断连续供给</td><td>需重新注册，成本最高</td><td>11-06</td></tr>
+            </tbody>
+          </table>
+          <p>四类动作的力度依次上升。11-01 的两家平台都停在第一、二类，11-02 才有平台做到第三类，第四类直到 11-06 才出现，且以“重复上传侵权内容”为理由，并非专为本案。这个顺序说明：平台当时面对的是大量同质内容，个案属性被淹没在批量处理里。</p>
+
+          <h3>三、责任讨论里被混在一起的两句话</h3>
+          <p>常见说法是“传播就是违法”。这句话把民事与行政两层压成一层。民法典关于隐私权的规定，指向的是未经同意公开他人私密活动，救济方式是停止侵害与赔偿；而传播淫秽信息的行政责任，指向的是内容本身的属性与传播范围。两条路径的构成要件不同，前者不以内容是否淫秽为前提，后者不以是否可识别到具体自然人为必要条件。把两者混用，会导致“只要删了就没事”或“只要转了就该拘留”两种极端判断。</p>
+          <blockquote>“已委托律师固定证据，后续将依法追究相关主体法律责任。”<cite>—— 11-07 代理声明原文，共 137 字，未提及场所与拍摄时间</cite></blockquote>
+          <p>声明的措辞值得注意：只说“相关主体”，没有点名平台或具体账号。转述时把“相关主体”直接等同于“转发者”属于推测，声明本身没有给出这个范围。</p>
+
+          <h3>四、可以自己核对的三项</h3>
+          <ol>
+            <li><b>搜索建议是否恢复。</b>如果输入关键词后仍无相关补全，说明关键词库层面的限制还在生效。</li>
+            <li><b>同一账号是否还在更新。</b>视频被删但账号正常更新，说明处置止于单条，未触及账号。</li>
+            <li><b>文件名是否与内容无关。</b>网盘里以“资料包”命名的压缩文件，是当前最常见的规避形态，举报入口在平台的文件举报页而非内容举报页。</li>
+          </ol>
+          <p>三项都能在不接触视频本体的情况下完成核对。这也是判断“处理是否真的推进”的最低成本方式。</p>
+        </div>
+      </section>
+
+      <!-- 06 体验指南 -->
+      <section class="block" id="guide" aria-labelledby="h-guide">
+        <div class="block-head">
+          <span class="no">06</span>
+          <h2 id="h-guide">体验指南：遇到同类外泄内容怎么做</h2>
+          <span class="note">五步，按顺序执行</span>
+        </div>
+        <ol class="steps">
+          <li><h4>不要下载、不要转存</h4><p>下载会在本地留下副本，转存会把文件挂到自己的账号名下。两者都会让“只是看看”变成有据可查的传播行为。</p></li>
+          <li><h4>先固定页面信息，再举报</h4><p>截图要包含账号名、发布时间、播放量三项。举报处理完成后页面会消失，事后补证没有原始页面可对照。</p></li>
+          <li><h4>走内容举报而不是评论吵架</h4><p>在评论区劝阻会被算法视为互动，反而提升权重。举报入口的“侵犯隐私”分类处理优先级高于“不感兴趣”。</p></li>
+          <li><h4>涉及网盘链接的单独举报</h4><p>网盘举报需要提供分享链接与提取码，处理周期通常长于内容平台。文件名与内容不符时，在说明里写清这一点。</p></li>
+          <li><h4>当事人视角的取证顺序</h4><p>先做时间戳固定的页面录屏，再联系平台调取上传记录，最后才考虑公开回应。顺序颠倒会让公开回应本身成为新的传播源。</p></li>
+        </ol>
+
+        <div class="compare" style="margin-top:18px">
+          <div class="panel left">
+            <h4>常见做法</h4>
+            <ul>
+              <li>在评论区发“别传了”，形成新的讨论串</li>
+              <li>把视频下载后“留证”，结果本地存有副本</li>
+              <li>只举报标题，正文未改的镜像版仍存活</li>
+              <li>公开点名转发账号，引发二次围观</li>
+            </ul>
+          </div>
+          <div class="panel right">
+            <h4>更稳妥的做法</h4>
+            <ul>
+              <li>沉默举报，不留言，不制造互动</li>
+              <li>用页面录屏代替下载，保留 URL 与时间</li>
+              <li>举报时注明“镜像版/同音字标题”</li>
+              <li>由代理律师统一发布，控制信息出口</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 FAQ -->
+      <section class="block" id="faq" aria-labelledby="h-faq">
+        <div class="block-head">
+          <span class="no">07</span>
+          <h2 id="h-faq">常见问题</h2>
+          <span class="note">以领域对象为主语作答</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>隐私视频外泄后，转发一次也构成侵权吗？</summary>
+            <div class="ans">构成。民法典对隐私的保护不以传播次数为门槛，未经同意让第三人知悉私密活动即可主张停止侵害。实践中是否起诉取决于传播范围与损害后果，但“只转了一次”不构成免责理由。平台侧的处置则通常按举报量与影响面排序，与法律判断不同步。</div>
+          </details>
+          <details>
+            <summary>平台下架视频，是否等于事件已经处理完毕？</summary>
+            <div class="ans">不等于。下架只覆盖被识别到的条目。11-01 到 11-05 之间，剪辑版通过镜像与同音字标题继续存在，说明单条删除无法处理形态变化。判断是否处理完毕，要看账号是否仍能连续发布、搜索建议是否恢复，而不是看某条视频还在不在。</div>
+          </details>
+          <details>
+            <summary>网盘分享链接为什么比内容平台更难处理？</summary>
+            <div class="ans">内容平台的审核依赖关键词与文件指纹，网盘依赖分享链接的举报与人工核验。文件名可以随意改写，链接可以套多层跳转，处理周期因此拉长。对普通用户来说，能做的只有把分享链接与提取码一起提交到网盘的文件举报入口，并写清文件名与内容不符。</div>
+          </details>
+          <details>
+            <summary>当事人在 11-07 的声明为什么没有说明拍摄时间？</summary>
+            <div class="ans">声明只承担“已采取法律行动”这一个信息功能。拍摄时间与场所归属涉及事实认定，公开说明会引出新的争点。这个选择在维权策略上常见，但也让外界无法核对视频是否经过剪辑，属于信息不完整而非虚假陈述。</div>
+          </details>
+          <details>
+            <summary>讨论这类事件，哪些说法属于推测？</summary>
+            <div class="ans">把“相关主体”等同于全部转发者、把下架条数当作实际传播量、把评论区的索取发言人数当作真实需求规模，都属于推测。推测可以出现在讨论里，但需要标明，不能与平台公告、当事人声明这类可核对来源混排。</div>
+          </details>
+          <details>
+            <summary>普通用户举报时应该提供什么？</summary>
+            <div class="ans">提供账号名、页面链接、发布时间截图三项即可，不需要下载内容。若涉及网盘，追加分享链接与提取码。举报说明里写清“侵犯隐私”与“未经同意传播”，比写情绪化描述更容易被分到对应处理队列。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 08 用户评论 -->
+      <section class="block" id="comments" aria-labelledby="h-comments">
+        <div class="block-head">
+          <span class="no">08</span>
+          <h2 id="h-comments">读者评论</h2>
+          <span class="note">11-02 至 11-07 抽样，保留原语气</span>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">周</span><b>周叙白</b><time datetime="2026-11-07">11-07 21:14</time></div>
+            <p>11-07 那份声明我读了三遍，137 个字里最关键的其实是“固定证据”四个字。<em>固定的是什么、固定到哪一步</em>，没写。这不是挑刺，是维权节奏本身就该先说清的部分。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">林</span><b>林间十点</b><time datetime="2026-11-06">11-06 09:02</time></div>
+            <p>11-01 那天两家平台一起清理，我还以为终于动真格了。结果 11-05 又刷到解说版，标题换了个同音字，封面打码换了个角度。删一条和删一类，差别太大了。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">陈</span><b>陈默不默</b><time datetime="2026-11-05">11-05 15:47</time></div>
+            <p>说句不讨喜的，评论区那些“求资源”的，被截图挂出来之后，不少人反而去搜了。<em>越挂越有人找</em>，这个循环不打破，单靠骂没用。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">吴</span><b>吴identify</b><time datetime="2026-11-04">11-04 11:33</time></div>
+            <p>对“转发一次也算侵权”这个点，我查了条文，确实不以次数为门槛。但现实里起诉成本摆在那，很多人最后选择不追究。规则和实际执行之间那道缝，比事件本身更值得写。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">郑</span><b>郑一页</b><time datetime="2026-11-03">11-03 08:20</time></div>
+            <p>10-30 那个镜像剪辑版我见过，时长压到 38 秒，画面左右翻，声音也变了调。这种改动对文件指纹是致命的，但关键词其实还认得出来，平台那几天没动，有点意外。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">何</span><b>何须问</b><time datetime="2026-11-02">11-02 23:05</time></div>
+            <p>我觉得把讨论本身也管起来不太合适。事情已经传开了，捂住搜索结果，只会让信息流向更封闭的地方，反而更难核对。<em>透明一点，比限制搜索更有用</em>。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 相关资讯 -->
+      <section class="block" id="news" aria-labelledby="h-news">
+        <div class="block-head">
+          <span class="no">09</span>
+          <h2 id="h-news">相关资讯</h2>
+          <span class="note">按信息层分类，非热度排序</span>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <div><h4><a href="/#updates">11-06 一批剪辑账号被限制发布</a></h4><p>处置理由写的是“重复上传侵权内容”，未点名本案。可核对点：账号主页是否仍显示更新。</p></div>
+            <span class="pill pill-fact">事实</span>
+          </div>
+          <div class="news-item">
+            <div><h4><a href="/#deep">四家平台处置动作对照表更新</a></h4><p>删除、关评论、隐藏话题、限制发布四类动作的覆盖面差异，已按 11-08 核对结果修正两处。</p></div>
+            <span class="pill pill-fact">对照</span>
+          </div>
+          <div class="news-item">
+            <div><h4><a href="/#faq">网盘链接分享为何清理更慢</a></h4><p>文件名可随意改写，举报需要链接与提取码同行，人工核验周期通常以天计。</p></div>
+            <span class="pill pill-reply">回应</span>
+          </div>
+          <div class="news-item">
+            <div><h4><a href="/#comments">评论区“求资源”话术的三种变体</a></h4><p>同音字替代、表情包暗号、报数接龙。三种都在 10-28 至 11-02 之间集中出现。</p></div>
+            <span class="pill pill-quote">转述</span>
+          </div>
+          <div class="news-item">
+            <div><h4><a href="/#guide">当事人维权流程的五步顺序</a></h4><p>录屏固定、平台调证、律师函、公开回应、报案。顺序错位会制造新的传播源。</p></div>
+            <span class="pill pill-fact">方法</span>
+          </div>
+          <div class="news-item">
+            <div><h4><a href="/#deep">“传播即违法”说法被混用的两层</a></h4><p>民事隐私权与行政传播淫秽信息的构成要件不同，混用会得出两个相反的极端结论。</p></div>
+            <span class="pill pill-guess">辨析</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 榜单 -->
+      <section class="block" id="rank" aria-labelledby="h-rank">
+        <div class="block-head">
+          <span class="no">10</span>
+          <h2 id="h-rank">传播节点热度排序</h2>
+          <span class="note">按可核对动作数排，非按播放量</span>
+        </div>
+        <ol class="rank">
+          <li><span class="rk hot">01</span><p>11-01 两家平台同日清理</p><span class="num">4 个可核对动作</span></li>
+          <li><span class="rk hot">02</span><p>11-07 代理声明发布</p><span class="num">3 个可核对动作</span></li>
+          <li><span class="rk">03</span><p>11-05 剪辑号二次搬运</p><span class="num">3 个可核对动作</span></li>
+          <li><span class="rk">04</span><p>10-26 首发片段出现</p><span class="num">2 个可核对动作</span></li>
+          <li><span class="rk">05</span><p>11-02 话题页整体隐藏</p><span class="num">2 个可核对动作</span></li>
+          <li><span class="rk">06</span><p>11-06 网盘链接抬头</p><span class="num">2 个可核对动作</span></li>
+        </ol>
+      </section>
+
+      <!-- 11 相关推荐 -->
+      <section class="block" id="reco" aria-labelledby="h-reco">
+        <div class="block-head">
+          <span class="no">11</span>
+          <h2 id="h-reco">相关推荐</h2>
+          <span class="note">同领域中可对照的检索词</span>
+        </div>
+        <div class="reco">
+          <a href="/#deep">隐私视频外泄责任划分</a>
+          <a href="/#updates">平台下架时间线</a>
+          <a href="/#faq">转发是否构成违法</a>
+          <a href="/#guide">二次传播取证方法</a>
+          <a href="/#comments">评论区索取资源现象</a>
+          <a href="/#deep">剪辑号规避审核手法</a>
+          <a href="/#news">媒体报道口径差异</a>
+          <a href="/#guide">当事人维权流程</a>
+          <a href="/#faq">网盘分享链接处理</a>
+          <a href="/#rank">传播节点热度排序</a>
+        </div>
+      </section>
+
+      <!-- 12 补充：可信度分层 -->
+      <section class="block" id="layer" aria-labelledby="h-layer">
+        <div class="block-head">
+          <span class="no">12</span>
+          <h2 id="h-layer">信息可信度分层</h2>
+          <span class="note">四层，按可核对程度</span>
+        </div>
+        <div class="overview-grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <div class="ov-cell"><b>A 层 · 平台公告</b><span>可核验</span><p>处置理由、执行时间、覆盖范围写明。11-06 的“重复上传侵权内容”属于这一层，但它不专指本案。</p></div>
+          <div class="ov-cell"><b>B 层 · 当事人声明</b><span>可核验但范围窄</span><p>11-07 的 137 字声明是原始文本，可逐字核对。它不提供的部分，不能由转述补上。</p></div>
+          <div class="ov-cell"><b>C 层 · 媒体转述</b><span>需回查原文</span><p>标题常用“网传”“疑似”，正文未必有新增来源。引用时应回到平台公告或声明原文。</p></div>
+          <div class="ov-cell"><b>D 层 · 评论区说法</b><span>不作论据</span><p>“我朋友说”“据说已经拘了”这类表述无法定位到具体节点，只能作为讨论样本，不能当事实。</p></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏导航">
+      <div class="side-card">
+        <h3>本页目录</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">事件概览</a></li>
+          <li><a href="/#featured">精选内容推荐</a></li>
+          <li><a href="/#updates">最新更新记录</a></li>
+          <li><a href="/#channels">分类索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">传播节点热度排序</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#layer">信息可信度分层</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>常查关键词</h3>
+        <div class="side-tags">
+          <a href="/#deep">隐私外泄</a>
+          <a href="/#updates">下架时间线</a>
+          <a href="/#faq">转发责任</a>
+          <a href="/#guide">取证流程</a>
+          <a href="/#comments">求资源话术</a>
+          <a href="/#rank">节点热度</a>
+        </div>
+      </div>
+      <div class="side-card">
+        <h3>核对说明</h3>
+        <p class="muted" style="margin:0">页面信息以 2026-11-08 可见的公开内容为准。带示例性质的条目已归入相应板块并在页尾注明，评论为语气样本，不指向具体账号。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2f4470"/>
+            <path d="M16 46V18h9v10h14V18h9v28h-9V36H25v10z" fill="#e8b04b"/>
+          </svg>
+          <b>张津瑜厕所门事件</b>
+        </div>
+        <p class="foot-note">把传播链路上的每个动作落到日期、平台和可核对来源，区分事实、回应、转述与推测。</p>
+        <p class="foot-note">页面更新时间：2026-11-08，对应正文更新项为处置节点表与责任判断清单。</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="/#overview">事件概览</a></li>
+          <li><a href="/#featured">精选内容</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#layer">可信度分层</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>实用栏目</h4>
+        <ul>
+          <li><a href="/#updates">更新记录</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动栏目</h4>
+        <ul>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#rank">节点热度排序</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#channels">分类索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>示例数据说明：页面中部分条目、评论与数字为按垂类特征生成的示例，用于展示信息组织方式，不构成对任何具体个人的事实认定。</span>
+      <span>© 2026 舆情节点梳理 · 内容仅供核对与讨论参考</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+<div class="search-empty" id="searchEmpty" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var navMain = document.getElementById('navMain');
+  if(menuBtn && navMain){
+    menuBtn.addEventListener('click', function(){
+      var open = navMain.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navMain.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:1000px)').matches){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  if('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var idx = targets.indexOf(en.target);
+          if(idx > -1){
+            sideLinks.forEach(function(l){ l.classList.remove('active'); });
+            sideLinks[idx].classList.add('active');
+          }
+        }
+      });
+    }, {rootMargin:'-120px 0px -65% 0px', threshold:0});
+    targets.forEach(function(t){ if(t) io.observe(t); });
+  }
+
+  // 本地查找
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var empty = document.getElementById('searchEmpty');
+  var searchables = Array.prototype.slice.call(
+    document.querySelectorAll('.card, .upd, .chan, .news-item, .cmt, .rank li, .reco a, .ov-cell, .steps li, .faq details')
+  );
+  function resetSearch(){
+    searchables.forEach(function(el){ el.style.display = ''; });
+    empty.classList.remove('on');
+    empty.textContent = '';
+  }
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){ resetSearch(); return; }
+    var hit = 0;
+    searchables.forEach(function(el){
+      var text = (el.textContent || '').toLowerCase();
+      if(text.indexOf(q) > -1){ el.style.display = ''; hit++; }
+      else { el.style.display = 'none'; }
+    });
+    if(hit === 0){
+      empty.textContent = '没有找到与“' + input.value.trim() + '”匹配的条目。可以试试：平台下架、转发责任、取证流程、网盘链接。';
+      empty.classList.add('on');
+    } else {
+      empty.textContent = '找到 ' + hit + ' 条相关条目。';
+      empty.classList.remove('on');
+    }
+  }
+  if(form){
+    form.addEventListener('submit', function(e){ e.preventDefault(); runSearch(); });
+    input.addEventListener('input', function(){
+      if(!input.value.trim()) resetSearch();
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "张津瑜厕所门事件",
+  "description": "围绕隐私视频外泄与二次传播的舆情节点梳理，按日期记录平台处置与责任判断。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "隐私视频外泄后，转发一次也构成侵权吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "构成。民法典对隐私的保护不以传播次数为门槛，未经同意让第三人知悉私密活动即可主张停止侵害；平台侧处置按举报量与影响面排序，与法律判断不同步。"}
+    },
+    {
+      "@type": "Question",
+      "name": "平台下架视频，是否等于事件已经处理完毕？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不等于。下架只覆盖被识别到的条目，剪辑版通过镜像与同音字标题可继续存在。判断标准是账号能否连续发布、搜索建议是否恢复。"}
+    },
+    {
+      "@type": "Question",
+      "name": "网盘分享链接为什么比内容平台更难处理？",
+      "acceptedAnswer": {"@type": "Answer", "text": "内容平台依赖关键词与文件指纹，网盘依赖分享链接举报与人工核验。文件名可随意改写，链接可多层跳转，处理周期因此拉长。"}
+    },
+    {
+      "@type": "Question",
+      "name": "当事人在 11-07 的声明为什么没有说明拍摄时间？",
+      "acceptedAnswer": {"@type": "Answer", "text": "声明只承担已采取法律行动这一信息功能。拍摄时间与场所归属涉及事实认定，公开说明会引出新争点，属于信息不完整而非虚假陈述。"}
+    },
+    {
+      "@type": "Question",
+      "name": "讨论这类事件，哪些说法属于推测？",
+      "acceptedAnswer": {"@type": "Answer", "text": "把相关主体等同于全部转发者、把下架条数当作实际传播量、把评论区索取人数当作真实需求规模，均属推测，需标明来源层级。"}
+    },
+    {
+      "@type": "Question",
+      "name": "普通用户举报时应该提供什么？",
+      "acceptedAnswer": {"@type": "Answer", "text": "提供账号名、页面链接、发布时间截图三项即可，不需下载内容；涉及网盘时追加分享链接与提取码，并注明侵犯隐私与未经同意传播。"}
+    }
+  ]
+}
+</script>
+</body>
+  </html>
